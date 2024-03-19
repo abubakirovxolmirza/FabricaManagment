@@ -19,7 +19,6 @@ class WarehouseSerializer(serializers.ModelSerializer):
 
 
 class ProductMaterialSerializer(serializers.ModelSerializer):
-        # material = MaterialSerializer(read_only=True)
 
     class Meta:
         model = ProductMaterial
@@ -27,7 +26,6 @@ class ProductMaterialSerializer(serializers.ModelSerializer):
 
 
 class ProductSerializer(serializers.ModelSerializer):
-    # product_materials = ProductMaterialSerializer(many=True)
 
     class Meta:
         model = Product
